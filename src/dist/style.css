@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.header-sec {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.header-sec .Mui-Toolbar-root {
+  margin-right: auto;
+}
+
+@media (min-width: 650px) {
+  #app-header.scrolled {
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: 0;
+    transition: all 0.3s;
+  }
+}
+@media (max-width: 650px) {
+  header > .MuiToolbar-root {
+    display: block;
+    padding-top: 10px;
+  }
+
+  .header-sec > p {
+    margin-left: 0;
+  }
+  .header-sec .Mui-Toolbar-root {
+    padding: 0;
+  }
+}
+.page-section {
+  min-height: 95vh;
+  margin-top: 50px;
+  background: #f5f5ff;
+  padding: 15px;
+}
+.page-section .wrapper {
+  padding: inherit;
+}
+
+.top-content {
+  padding-top: 30px;
+}
+.top-content .img {
+  width: 60px;
+  text-align: center;
+  padding: 10px 5px 6px;
+  margin-top: 7px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.top-content .info {
+  display: inline-block;
+}
+.top-content .info p:first-child {
+  margin-bottom: 2px;
+}
+
+.table-controls {
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  grid-column-gap: 30px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 600px) and (max-width: 1080px) {
+  .table-controls {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .table-controls {
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+  }
+}
+@media (max-width: 650px) {
+  .top-content .img {
+    margin-bottom: 15px;
+  }
+}
